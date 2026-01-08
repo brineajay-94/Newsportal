@@ -1,14 +1,14 @@
 backend:
   name: git-gateway
-  branch: main # or master
+  branch: main  # or 'master' if your branch is master
 
-media_folder: "img/uploads"   # Where uploaded images are stored
-public_folder: "/img/uploads" # URL path for uploaded images
+media_folder: "img/uploads"   # where images are saved
+public_folder: "/img/uploads" # URL path for images
 
 collections:
   - name: "news"
     label: "News"
-    folder: "content/news" # Markdown files will be saved here
+    folder: "content/news"   # folder for markdown articles
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
